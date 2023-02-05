@@ -23,11 +23,18 @@ button {
   cursor: pointer;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 .gallery {
   display: flex;
+  padding: 0;
+  list-style: none;
+}
+.gallery .item {
+  width: 350px;
+  height: 350px;
+}
+
+.gallery img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }

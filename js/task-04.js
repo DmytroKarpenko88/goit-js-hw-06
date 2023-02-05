@@ -25,7 +25,7 @@ const CounterPlugin = function ({
 CounterPlugin.prototype._getRefs = function (rootSelector) {
   const refs = {};
   refs.conteiner = document.querySelector(rootSelector);
-  console.log(refs.conteiner);
+
   refs.incrementBtn = refs.conteiner.querySelector('[data-action="increment"]');
   refs.decrementBtn = refs.conteiner.querySelector('[data-action="decrement"]');
   refs.value = refs.conteiner.querySelector('#value');

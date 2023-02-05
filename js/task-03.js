@@ -23,7 +23,7 @@ const images = [
 ];
 
 const makeGalleryMarkup = ({ url, alt }) => {
-  return `<li class="item"><img src="${url}" alt="${alt}" width="320"></li>`;
+  return `<li class="item"><img src="${url}" alt="${alt}"></li>`;
 };
 
 const makeGallerysMarkup = images.map(makeGalleryMarkup).join('');
