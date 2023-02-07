@@ -45,6 +45,7 @@ const onDestroyBox = refs.destroy.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
   let boxSize = 30;
+  boxes.innerHTML = '';
   amount = refs.countBoxes.value;
 
   for (let i = 0; i < amount; i++) {
@@ -60,6 +61,5 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
-  const box = document.querySelector('#boxes');
-  box.innerHTML = '';
+  boxes.innerHTML = '';
 }
