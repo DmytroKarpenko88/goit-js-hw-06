@@ -10,10 +10,7 @@ const refs = {
   text: document.querySelector('#text'),
 };
 
-const onChangeInputRange = refs.input.addEventListener(
-  'change',
-  changeTextSize
-);
+const onChangeInputRange = refs.input.addEventListener('input', changeTextSize);
 
 function changeTextSize(event) {
   const fontSize = refs.input.value;
