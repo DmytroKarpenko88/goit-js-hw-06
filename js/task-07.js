@@ -13,8 +13,6 @@ const onChangeInputRange = refs.input.addEventListener(
   'change',
   changeTextSize
 );
-console.log('input', refs.input);
-console.log('text', refs.text);
 
 function changeTextSize(event) {
   const fontSize = refs.input.value;
