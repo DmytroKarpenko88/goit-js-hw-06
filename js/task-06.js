@@ -12,7 +12,6 @@
 // Для додавання стилів використовуй CSS-класи valid і invalid, які ми вже додали у вихідні файли завдання.
 
 const input = document.querySelector('input');
-console.log(input);
 
 input.addEventListener('blur', onInputBlur);
 
